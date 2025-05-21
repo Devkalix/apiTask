@@ -126,7 +126,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = True
+#CORS_ALLOWED_ORIGINS = True https://apitask-0l6s.onrender.com/todo/tasts/
 
 # CORS_ALLOWED_ORIGINS = [
 #     "https://example.com",
@@ -134,3 +134,5 @@ CORS_ALLOWED_ORIGINS = True
 #     "http://localhost:8080",
 #     "http://127.0.0.1:9000",
 # ]
+
+CORS_ALLOWED_ORIGINS = ["https://apitask-0l6s.onrender.com"]
