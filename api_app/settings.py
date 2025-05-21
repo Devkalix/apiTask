@@ -126,8 +126,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#CORS_ALLOWED_ORIGINS = True https://apitask-0l6s.onrender.com/todo/tasts/
-
 # CORS_ALLOWED_ORIGINS = [
 #     "https://example.com",
 #     "https://sub.example.com",
@@ -135,4 +133,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     "http://127.0.0.1:9000",
 # ]
 
-CORS_ALLOWED_ORIGINS = ["https://apitask-0l6s.onrender.com"]
+CORS_ALLOWED_ORIGINS = [
+    "https://apitask-0l6s.onrender.com",   # ton backend hébergé
+    "http://localhost:3000",               # pour test web local
+    "http://localhost:8000",               # pour test API local
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:3000",
+]
